@@ -45,7 +45,7 @@ public class Cuenta {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name="dni")
+    @JoinColumn(name="dni", referencedColumnName = "dni")
     private Cliente cliente;
 
     @OneToMany(mappedBy = "cuenta")

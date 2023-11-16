@@ -39,8 +39,8 @@ public class Cliente {
     private Date fechaIngreso; 
 
     @OneToOne(mappedBy="cliente", cascade = CascadeType.ALL)
-    private Direccion direccion; //->
-
+    private Direccion direccion; 
+    
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Cuenta> cuentas;
 

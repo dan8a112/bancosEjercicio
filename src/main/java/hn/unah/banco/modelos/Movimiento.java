@@ -38,7 +38,7 @@ public class Movimiento {
     private char tipoMovimiento;
 
     @ManyToOne
-    @JoinColumn(name = "idcuenta")
+    @JoinColumn(name = "idcuenta", referencedColumnName = "idcuenta")
     private Cuenta cuenta;
 
 }
